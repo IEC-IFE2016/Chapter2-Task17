@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天气统计数据</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" tabindex="1" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio" tabindex="2"></label>
+    <label>月<input name="gra-time" value="month" type="radio" tabindex="3"></label>
+</fieldset>
+
+<fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select"></select>
+</fieldset>
+
+<div class="aqi-chart-wrap">
+    <ul></ul>
+</div>
+<script src="task.js"></script>
+</body>
+</html>
